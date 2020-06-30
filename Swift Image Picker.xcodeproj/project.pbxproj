@@ -13,9 +13,12 @@
 		938030DB24AB8C3C00D77C2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 938030DA24AB8C3C00D77C2E /* Assets.xcassets */; };
 		938030DE24AB8C3C00D77C2E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 938030DD24AB8C3C00D77C2E /* Preview Assets.xcassets */; };
 		938030E124AB8C3C00D77C2E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 938030DF24AB8C3C00D77C2E /* LaunchScreen.storyboard */; };
+		9E80E006CABC3A4470670573 /* Pods_Swift_Image_Picker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 190D18E01B92F209F1DC66B2 /* Pods_Swift_Image_Picker.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		190D18E01B92F209F1DC66B2 /* Pods_Swift_Image_Picker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Swift_Image_Picker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		80694CC5748C43B1F739B941 /* Pods-Swift Image Picker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swift Image Picker.debug.xcconfig"; path = "Target Support Files/Pods-Swift Image Picker/Pods-Swift Image Picker.debug.xcconfig"; sourceTree = "<group>"; };
 		938030D124AB8C3B00D77C2E /* Swift Image Picker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift Image Picker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		938030D424AB8C3B00D77C2E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		938030D624AB8C3B00D77C2E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		938030DD24AB8C3C00D77C2E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		938030E024AB8C3C00D77C2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		938030E224AB8C3C00D77C2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC7C7527EB1FF907C8F2A691 /* Pods-Swift Image Picker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swift Image Picker.release.xcconfig"; path = "Target Support Files/Pods-Swift Image Picker/Pods-Swift Image Picker.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E80E006CABC3A4470670573 /* Pods_Swift_Image_Picker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2EF0CF16D11008E16C785338 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				190D18E01B92F209F1DC66B2 /* Pods_Swift_Image_Picker.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		938030C824AB8C3B00D77C2E = {
 			isa = PBXGroup;
 			children = (
 				938030D324AB8C3B00D77C2E /* Swift Image Picker */,
 				938030D224AB8C3B00D77C2E /* Products */,
+				9A7E236A7F0FE419028A48B9 /* Pods */,
+				2EF0CF16D11008E16C785338 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -75,6 +90,16 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		9A7E236A7F0FE419028A48B9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				80694CC5748C43B1F739B941 /* Pods-Swift Image Picker.debug.xcconfig */,
+				FC7C7527EB1FF907C8F2A691 /* Pods-Swift Image Picker.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -82,9 +107,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 938030E524AB8C3C00D77C2E /* Build configuration list for PBXNativeTarget "Swift Image Picker" */;
 			buildPhases = (
+				12374B07D7B2CF74151CFD50 /* [CP] Check Pods Manifest.lock */,
 				938030CD24AB8C3B00D77C2E /* Sources */,
 				938030CE24AB8C3B00D77C2E /* Frameworks */,
 				938030CF24AB8C3B00D77C2E /* Resources */,
+				8CADD8F35074C21F3461D2ED /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -140,6 +167,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		12374B07D7B2CF74151CFD50 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Swift Image Picker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8CADD8F35074C21F3461D2ED /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Swift Image Picker/Pods-Swift Image Picker-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Swift Image Picker/Pods-Swift Image Picker-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Swift Image Picker/Pods-Swift Image Picker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		938030CD24AB8C3B00D77C2E /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		938030E624AB8C3C00D77C2E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80694CC5748C43B1F739B941 /* Pods-Swift Image Picker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -302,6 +372,7 @@
 		};
 		938030E724AB8C3C00D77C2E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC7C7527EB1FF907C8F2A691 /* Pods-Swift Image Picker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
